@@ -1,0 +1,27 @@
+#cabecera {
+    background-color: greenyellow;
+}
+
+#navegacion {
+    background-color: aquamarine;
+}
+#lateral {
+    background-color: blue;
+    float: left;
+    height: 1060px;
+}
+#contenido {
+    background-color: aqua;
+    margin-left: 270px;
+    padding-left: 25px;
+    padding-top: 1px;
+}
+#pie {
+    background-color: red;
+    clear: both;
+    margin-top: 20px;
+}
+li {
+    display: inline;
+    background-color: red;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevos selectores</title>
+    <style>
+        /* mismo selector pero con diferentes formas */
+        p[name^="mis"] {
+         color: red;   
+        }
+        p[name$="ilo"] {
+         color: blue;   
+        }
+        p[name*="buenos"] {
+         color: hotpink;   
+        }
+        /* aqui empiezan las pseudoclases */
+        p:nth-child(6){
+            color: rgb(38, 0, 255);
+        }
+
+    </style>
+</head>
+<body>
+    <!-- aqui se aplican los selectores de name como ^ || $ || * -->
+    <p name="mis-estilos">aqui se esta aplicando el que inicia con "mis"</p>
+    <p name="mi-segundo estilo">aqui se esta aplicando el que termina con "ilo"</p>
+    <p name="mis-otros estilos">aqui se esta aplicando el que inicia con mis</p>
+    <p name="otros buenos estilos">aqui se esta aplicando el que tiene las letras "buenos" en algun punto"</p>
+    <!-- aqui se aplican las pseudoclases -->
+    <p>este es el quinto parrafo</p>
+    <p>este es el sexto parrafo y al que se le aplica la pseudoclase p:nth-child(6)</p>
+    <!-- EN LA SIGUIENTE LISTA DESORDENADA NO APLICA EL PSEUDOCODIGO YA QUE NO SON HERNANOS LO PARRAFOS -->
+    <ul>
+        <li><p>primer elemento</p></li>
+        <li><p>segundo elemento</p></li>
+        <li><p>tercer elemento</p></li>
+        <li><p>cuarto elemento</p></li>
+        <li><p>quinto elemento</p></li>
+        <li><p>sexto elemento</p></li>
+        <li><p>septimo elemento</p></li>
+    </ul>
+    <!-- EN ESTA LISTA DESORDENADA SI APLICAN EL PSEUDOCODIGO YA QUE LOS PARRAFOS SI SON HERMANOS -->
+    <ul>
+        <br>
+        <li>
+            <p>primer elemento</p>
+            <p>segundo elemento</p>
+            <p>tercer elemento</p>
+            <p>cuarto elemento</p>
+            <p>quinto elemento</p>
+            <p>sexto elemento</p>
+            <p>septimo elemento</p>
+        </li>
+
+    </ul>
+</body>
+</html>

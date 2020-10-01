@@ -7,17 +7,34 @@
     <style>
         #principal {
             width: 500px;
-            background-color: paleturquoise;
+            /* background-color: paleturquoise; */
+            background:-webkit-linear-gradient(left, rgb(76, 0, 255) 30%, rgb(0, 238, 255));
+            /* background:-webkit-radial-gradient(center,ellipse, rgb(76, 0, 255), rgb(0, 238, 255)); */
+            /* background:-moz-linear-gradient(bottom, rgb(76, 0, 255), rgb(0, 238, 255));
+            background:-ms-linear-gradient(bottom, rgb(76, 0, 255), rgb(0, 238, 255));
+            background:-o-linear-gradient(bottom, rgb(76, 0, 255), rgb(0, 238, 255)); */
+             
             text-align: center;
             margin: 15px auto;
             padding: 10px;
-            border: solid 3px red;
+            border: solid 3px rgb(0, 110, 255);
             border-radius: 50px;
             box-shadow: grey 8px 8px 8px;
+            outline: 2px dashed blue;
+            outline-offset: 12px;
+            margin-top: 50px;
+            /* -webkit-transform: scale.75; */
+            -webkit-transition: -webkit-transform 1s ease 0.5s;
+            -webkit-transform: skew(-18deg);
+        }
+        #principal:hover {
+            -webkit-transform: rotate(-2deg);
+            background:-webkit-linear-gradient(left, rgb(76, 0, 255) 20%, rgb(0, 238, 255));
         }
         #titulo {
             font: bold 36px sans-serift;
             text-shadow:  grey 3px 3px 4px;
+            color: rgba(0, 0, 0, 0.75);
         }
     </style>
 </head>

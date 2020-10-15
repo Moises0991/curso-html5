@@ -1,0 +1,37 @@
+#videos {
+    background: rgb(68, 57, 57);
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: black 3px 3px 5px;
+    display: inline-block;
+    margin: 50px 10px 10px 350px;
+}
+
+body {
+    background-color: black ;
+}
+
+nav {
+    margin: 5px 0px;
+}
+
+#botones {
+    float: left;
+    width: 100px;
+    height: 20px;
+}
+
+#barra {
+    background-color: rgb(114, 123, 250);
+    width: 500px;
+    height: 14px;
+    border: solid 1px grey;
+    margin-left: 80px;
+}
+
+#progreso {
+    background-color: green;
+    position: absolute;
+    width: 0px;
+    height: 14px;
+}

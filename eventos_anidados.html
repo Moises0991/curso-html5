@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function aviso_parrafo() {
+            alert("Aviso parrafo");
+        }
+        function aviso_imagen() {
+            alert("Aviso imagen");
+        }
+        function eventos() {
+            var elemento1= document.getElementsByTagName("p")[0];
+            var elemento2= document.getElementsByTagName("img")[0];
+
+            elemento1.addEventListener("click",aviso_parrafo, false);
+        elemento2.addEventListener("click",aviso_imagen, true);
+        }
+        window.addEventListener("load", eventos,false);
+    </script>
+</head>
+<body>
+   <p><img src="imagenes/LoarreCastle.jpg" alt=""></p> 
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Comienzo del script -->
+    <script>
+        var imagen= new Array(3);
+        function lugar() {
+            alert("FraserRiver");
+        }
+        function manejaLugar() {
+
+            for(var i=0;i<4;i++) {
+                imagen[i]= document.getElementsByTagName("img")[i];
+            }
+
+            imagen[0].addEventListener("mouseover", function(){imagen[0].width=550; imagen[0].heght=309;}, false);
+            imagen[0].addEventListener("mouseout", function(){imagen[0].width=500; imagen[0].heght=281;}, false);
+            imagen[0].addEventListener("click", lugar, false);
+
+            imagen[1].addEventListener("mouseover", function(){imagen[1].width=550; imagen[1].heght=309;}, false);
+            imagen[1].addEventListener("mouseout", function(){imagen[1].width=500; imagen[1].heght=281;}, false);
+            imagen[1].addEventListener("click", lugar, false);
+            
+            imagen[2].addEventListener("mouseover", function(){imagen[2].width=550; imagen[2].heght=309;}, false);
+            imagen[2].addEventListener("mouseout", function(){imagen[2].width=500; imagen[2].heght=281;}, false);
+            imagen[2].addEventListener("click", lugar, false);
+
+            imagen[3].addEventListener("mouseover", function(){imagen[3].width=550; imagen[3].heght=309;}, false);
+            imagen[3].addEventListener("mouseout", function(){imagen[3].width=500; imagen[3].heght=281;}, false);
+            imagen[3].addEventListener("click", lugar, false);
+
+        }
+
+        /*function crecer() {
+            imagen.width= 550;
+            imagen.heght= 309;
+        }
+        function menguar() {
+            imagen.width= 500;
+            imagen.heght= 281;
+        }*/
+ 
+        // window.onload=manejaLugar;
+
+        window.addEventListener("load", manejaLugar, false)
+
+    </script>
+    <!-- Termino del script -->
+    <style>
+        img {
+            margin-left: 25px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        <img src="imagenes/DinantBelgium.jpg" alt="">
+        <img src="imagenes/FraserRiver.jpg" alt="">
+        <img src="imagenes/GoldenGinkgo.jpg" alt="">
+        <img src="imagenes/LakeMoraine.jpg" alt="">
+    </p>
+</body>
+</html>

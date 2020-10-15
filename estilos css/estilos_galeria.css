@@ -1,0 +1,55 @@
+body {
+    font-size: 70%;
+    /* background-color: lightcyan; */
+    background: -webkit-linear-gradient(bottom, rgb(5, 96, 233) 70%, rgb(0, 183, 255))
+}
+h1 {
+    font: normal 3em Times new roman, sans-serif, Geneva;
+    background: -webkit-linear-gradient(top, blue, rgb(0, 217, 255));
+    width: 35%;
+    border-radius: 50px;
+    margin: 15px auto;
+    text-align: center;
+    padding: 15px;
+    color: white;
+    box-shadow: rgb(0, 17, 255) 5px 5px 5px;
+    text-shadow: white 2px 2px 4px;
+}
+h2 {
+    font: bold 2em sans-serif, times new roman;
+    padding: 5px 0px 5px 0px;
+    
+}
+section {
+    width: 90%;
+    border-top: 1.5px dashed rgba(128, 128, 128, 0.829);
+    margin: auto;
+}
+figure {
+    float: left;
+}
+figure img {
+    border-radius: 30px;
+    padding: 3px;
+    -webkit-transition: 0.25s ease-in-out 0.1s;
+
+}
+figure img:hover {
+    -webkit-transform: scale(1.1);
+    background-color: rgb(25, 0, 253);
+    box-shadow: rgb(4, 0, 255) 5px 5px 15px;
+}
+figcaption {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    margin: 15px 0px 20px 0px;
+    text-align: center;
+}
+footer {
+    clear: both;
+}
+footer p {
+    padding-top: 15px;
+    font: 1.5em "Times New Roman", times, sans-serif;
+    color: rgb(124, 185, 212);
+}

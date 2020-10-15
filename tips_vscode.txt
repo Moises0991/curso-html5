@@ -1,0 +1,5 @@
+    ul*3>li*5>span{hola perros} //esto sirve para poder crear estructuras mas rapido
+
+    localhost: 5500 //en el navagador sirve para visitar el puerto 5500 que es en donde esta el proyecto en tiempo real
+
+    con shift + alt + f //se consigue hacer el reseteo del codigo para tenerlo ordenado y poner format document
